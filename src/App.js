@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -6,7 +5,6 @@ import {
   Route,
   
 } from "react-router-dom";
-import data from '../src/data';
 import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Login from './Component/Login/Login';

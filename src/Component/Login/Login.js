@@ -77,7 +77,6 @@ const Login = () => {
 
         })
         .catch((error) => {
-            var errorCode = error.code;
             var errorMessage = error.message;
             console.log(errorMessage)
 
@@ -106,7 +105,6 @@ const Login = () => {
             history.replace(from);
         })
         .catch((error) => {
-          var errorCode = error.code;
           var errorMessage = error.message;
          
 
@@ -128,7 +126,6 @@ const handSignInWithGoogle = () => {
   .then((result) => {
     var credential = result.credential;
 
-    var token = credential.accessToken;
     var user = result.user;
     setLoggedInUser(user);
 
@@ -139,10 +136,7 @@ const handSignInWithGoogle = () => {
             history.replace(from);
 
   }).catch((error) => {
-    var errorCode = error.code;
     var errorMessage = error.message;
-    var email = error.email;
-    var credential = error.credential;
 
     const newUser = {...user};
     newUser.error = errorMessage;
@@ -167,7 +161,6 @@ const handleSignInWithFacebook = () => {
 
     var user = result.user;
 
-    var accessToken = credential.accessToken;
     setLoggedInUser(user);
 
     const newUser = {...user};
@@ -179,10 +172,7 @@ const handleSignInWithFacebook = () => {
 
   })
   .catch((error) => {
-    var errorCode = error.code;
     var errorMessage = error.message;
-    var email = error.email;
-    var credential = error.credential;
     const newUser = {...user};
     newUser.error = errorMessage;
     newUser.success = '';
