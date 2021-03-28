@@ -29,7 +29,7 @@ const Header = () => {
                        loggedInUser.email && <Nav.Link > <span>Welcome, <Link to ="/login">{loggedInUser.displayName}</Link></span></Nav.Link>
                     }
                     {
-                         loggedInUser.email? <Link ><Button onClick={logOut} variant="danger">Logout</Button></Link>:
+                         loggedInUser.email? <Link ><Button className="loginBtn" onClick={logOut} variant="danger">Logout</Button></Link>:
                          <Link to="/login"><Button className="loginBtn" variant="success">Login</Button></Link>
                     }
                 </Form>
