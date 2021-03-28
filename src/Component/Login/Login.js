@@ -56,8 +56,8 @@ const Login = () => {
        if(user.email && user.password && user.name) {
         firebase.auth().createUserWithEmailAndPassword(user.email, user.password)
         .then((userCredential) => {
-            var user = userCredential.user;
-            setLoggedInUser(user);
+            var signUpUser = userCredential.user;
+            setLoggedInUser(signUpUser);
             
             var userForUpdate = firebase.auth().currentUser;
             userForUpdate.updateProfile({
