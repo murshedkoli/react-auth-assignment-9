@@ -1,0 +1,28 @@
+.searchbox{
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    font-weight: bold;
+
+}
+
+input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.searchbox button{
+    
+        width: 100%;
+        border:none;
+        padding: 10px;
+        border-radius: 30px;
+        color: white;
+        font-weight: bold;
+        background-color: green;
+    
+}
+

@@ -1,0 +1,10 @@
+.navbar{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.navbar h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+}

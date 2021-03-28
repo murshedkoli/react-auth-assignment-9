@@ -1,0 +1,13 @@
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.card{
+    height: 250px;
+   
+    margin-top: 10px;
+    
+}
