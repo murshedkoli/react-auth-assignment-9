@@ -48,7 +48,7 @@ const RidePage = () => {
             <Container >
                 <Row>
 
-                <Col sm={4} className="searchbox">
+                <Col lg={4} sm={12} className="searchbox">
                     {
                         formData.pickFrom && formData.pickTo && formData.date && rideDataFiltered ? <div >
 
@@ -82,7 +82,7 @@ const RidePage = () => {
 
                 </Col>
 
-                <Col sm={8} >
+                <Col lg={8} sm={12} >
 
                     {
                             rideDataFiltered &&  <MapChart></MapChart>
