@@ -124,7 +124,6 @@ const handSignInWithGoogle = () => {
     firebase.auth()
   .signInWithPopup(provider)
   .then((result) => {
-    var credential = result.credential;
 
     var user = result.user;
     setLoggedInUser(user);
@@ -157,7 +156,6 @@ const handleSignInWithFacebook = () => {
   .auth()
   .signInWithPopup(provider)
   .then((result) => {
-    var credential = result.credential;
 
     var user = result.user;
 
