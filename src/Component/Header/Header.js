@@ -30,7 +30,7 @@ const Header = () => {
                     }
                     {
                          loggedInUser.email? <Link ><Button onClick={logOut} variant="danger">Logout</Button></Link>:
-                         <Link to="/login"><Button variant="danger">Login</Button></Link>
+                         <Link to="/login"><Button variant="success">Login</Button></Link>
                     }
                 </Form>
             </Navbar>
