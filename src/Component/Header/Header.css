@@ -8,3 +8,7 @@
     font-weight: bolder;
     text-transform: uppercase;
 }
+
+.loginBtn{
+ background-color:red;   
+}
